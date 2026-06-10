@@ -24,5 +24,5 @@ make wave       # Check on GTKWAVE
 ```powershell
 iverilog -g2012 -I RTL -o Test/gpu_sim.vvp RTL/*.sv Test/tb_gpu.sv
 vvp Test/gpu_sim.vvp            # Run First always. Text output
-gtkwave 
+gtkwave Test/gpu_trace.vcd      # Check on GTKWAVE
 ```
